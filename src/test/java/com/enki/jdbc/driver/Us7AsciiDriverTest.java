@@ -20,8 +20,8 @@ public class Us7AsciiDriverTest {
 
             // Connection details
             String url = "jdbc:oracle:us7ascii:thin:@//localhost:1521/XE";
-            String user = "kidi";
-            String password = "rlagywls";
+            String user = "user";
+            String password = "password";
 
             System.out.println("Connecting to database: " + url);
             conn = DriverManager.getConnection(url, user, password);
