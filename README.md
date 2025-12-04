@@ -2,7 +2,7 @@
 
 이 라이브러리는 Oracle 데이터베이스가 `US7ASCII` 캐릭터셋으로 설정되어 있고, 애플리케이션이 `EUC-KR`(한글)을 사용할 때 발생하는 인코딩 깨짐 문제를 해결하기 위한 JDBC 드라이버 래퍼(Wrapper)입니다.
 
-기존의 단순한 인코딩 변환(`new String(..., "8859_1")`)만으로는 해결되지 않는 Oracle JDBC 드라이버의 제약 사항을 우회하는 고급 기법을 적용했습니다.
+기존의 단순한 인코딩 변환(`new String(..., "8859_1")`)만으로는 해결되지 않는 Oracle JDBC 드라이버의 제약 사항을 우회하는 기법을 적용했습니다.
 
 ## 주요 기능 및 작동 원리
 
@@ -75,3 +75,5 @@ while (rs.next()) {
 ## 주의 사항
 - 이 드라이버는 `US7ASCII` DB에 `EUC-KR` 데이터를 저장하는 특수한 상황("US7ASCII Hack")을 위해 제작되었습니다.
 - `NVARCHAR`, `NCHAR` 등 유니코드 컬럼에 대해서는 테스트되지 않았습니다.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/enki94)
